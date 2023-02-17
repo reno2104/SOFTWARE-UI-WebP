@@ -9,8 +9,10 @@ Ubuntu Linux를 쓰다보면은 Apache2를 설치할때 최신버젼이라고는
 1. 현재 설치가능한 버젼 조회
 
 	root@test:~# apt-cache showpkg apache2 | grep 2.4.
+	
 	2.4.43-1+ubuntu16.04.1+deb.sury.org+7
-	2.4.18-2ubuntu3.17 (/var/lib/apt/lists.....
+	3.
+	4.4.18-2ubuntu3.17 (/var/lib/apt/lists.....
 
 위 기능을 이용해서 설치가능한 패키지 종류를 보다 보면 2.4.43 이라는 단어를 발견하게 된다.
 즉, apt-get install 로는 apache2 2.4.43 version 까지는 설치가 가능한 것이다. 
