@@ -20,6 +20,7 @@ Ubuntu Linux를 쓰다보면은 Apache2를 설치할때 최신버젼이라고는
 위와 같이 sudo apt-get install {패키지명}={버젼정보}를 넣어주면 된다.
 
 이러고 나서 아파치 재시작하면 끝!
+
 	root@test:~# sudo /etc/init.d/apache2 restart
 
 ## PHP설치
