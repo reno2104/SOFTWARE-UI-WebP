@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+
+			background: -moz-linear-gradient(0deg, rgb(#EAEAEA, #D1B2FF));
+			}
+
+  .input-form {
+    max-width: 680px;
+
+    margin-top: 80px;
+    padding: 32px;
+
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
+  }
+
+		input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+		.input-form h4{
+			text-align: center !important;
+			font-weight: 700;
+		}
+		.input-form h4:hover{
+			cursor: default;
+		}
+
+		.idname{
+			width:108% !important;
+		}
+
+		.name{
+			width:100% !important;
+		}
+
+		.emailForm{
+			width:45% !important;
+		}
+
+.emailBox{
+	display: flex;
+}
+
+.emailBox > h4{
+	line-height: inherit;
+	margin: 0;
+}
+
+.emailBox > h4:hover{
+	cursor: default;
+}
+
+.selectEmail2{
+	width:30% !important;
+	margin-left:3px;
+}
+
+.addSearchSec{
+	display: flex;
+}
+
+
+#member_post{
+	width:30% !important;
+}
+#member_addr{
+	width:50% !important;
+}
+
+.addSearchSec > input, button{
+	margin-right:3px;
+}
+
+.addSearchSec > button{
+	border-radius: 5px;
+	background-image: linear-gradient(315deg, black, #3F0099);
+	border: none;
+	font-weight: 500;
+	color:white;
+}
+
+.addSearchSec > button:hover{
+	background-image: linear-gradient(315deg, #3F0099 , black);
+	transition: 2s;
+}
+
+#address2{
+	margin-top: 3px;
+}
+
+#phoneNum{
+	width:70%;
+	margin-bottom: 5px;
+}
+
+.numberSec{
+	display: flex;
+}
+
+.numberSec > button{
+	margin-left:3px;
+	border-radius: 5px;
+	height: 38px;
+	background-image: linear-gradient(315deg, black, #3F0099);
+	color: white;
+	font-weight: 500;
+}
+
+.mb-4 > .join_login:hover{
+	text-decoration: none !important;
+
+}
+
+.j_complete{
+    background: linear-gradient(to right, rgb(128, 65, 217), rgb(0, 0, 0)) !important;
+}
+
+.j_back{
+	background: linear-gradient(to right, rgb(67, 116, 217), rgb(0, 0, 0)) !important;
+}
+
+
+.btn-block+.btn-block{
+	margin-top: 0;
+}
+
+.submitForm{
+	display: flex;
+}
+
+footer > p{
+	cursor: default;
+}
