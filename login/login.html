@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>미소마켓 로그인</title>
 				<link rel="preconnect" href="https://fonts.googleapis.com">
 				<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 				<link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
@@ -27,7 +27,7 @@
 <body>
     <div class="wrap">
         <div class="login">
-									<a href="/index.html" class="logo">미소마켓 쇼핑몰<span class="text-primary">.</span></a>
+									<a href="#" onclick="returnPage()" class="logo">미소마켓 쇼핑몰<span class="text-primary">.</span></a>
             <h2>ID 로그인</h2>
             <!-- <div class="login_sns">
             <li><a href=""><i class="fab fa-instagram"></i></a></li>
@@ -58,6 +58,11 @@
     </div>
 </body>
 <script>
+
+function returnPage(){
+	opener.location.href='/index.html'; 
+	window.close();
+}
 
 function submit(){
 	opener.location.href='/loginConnect.html'; 

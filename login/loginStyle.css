@@ -230,7 +230,7 @@ body {
 
 			@media (max-width:690px){
 				.login{
-					width: 60% !important;
+					width: 60%;
 					height: 600px;
 					background: white;
 					border-radius: 20px;
@@ -257,7 +257,7 @@ body {
 		@media (max-width:880px){
 
 		.login{
-			width: 60% !important;
+			width: 60%;
 			height: 600px;
 			background: white;
 			border-radius: 20px;
