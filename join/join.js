@@ -7,6 +7,7 @@ $('#j_complete').click(function form_check(){
 	var pwd1 = document.getElementById("password1");
 	var repwd = document.getElementById("password2");
 	var email = document.getElementById("uEmail");
+	var emailAddr = document.getElementById("selectEmail");
 	var addrPost = document.getElementById("member_post");
 	var address2 = document.getElementById("address2");
 	var phoneNum = document.getElementById("phoneNum");
@@ -74,6 +75,15 @@ if (email.value == "") {
 	return false;
 	};
 
+	
+	// 이메일주소 입력
+	if (emailAddr.value == "") {
+		alert("이메일주소를 입력/선택하세요.");
+		emailAddr.focus();
+		return false;
+		};
+	
+
 	// 주소 검색
 	if (addrPost.value == "") {
 		alert("주소를 검색하세요.");
@@ -106,13 +116,20 @@ if (email.value == "") {
 	};
 
 
-	// 개인정보 동의
-	if($("input:checkbox[id='persnalCheck']").prop(":checked") != true){
-		// e.stopPropagation();
-		alert('개인정보 수집 및 이용에 동의에 체크해 주세요');
-		return;
-}	
+	// 인증번호 유효성 검사(얘만 id값 적용함)
+	if(!persnalCheck.checked) {
+		alert('개인정보 수집 및 이용에 동의에 체크해 주세요')
+		persnalCheck.focus();
+		return false;
+};
 
+// 처음에 썻다가 안쓰는 코드
+	// if($(":checkbox[id='persnalCheck']").prop(":checked") == false){
+	//  e.stopPropagation();
+	// 	alert('개인정보 수집 및 이용에 동의에 체크해 주세요');
+	// 	this.focus();
+	// 	return false;
+	// }; 
 
 	  //입력 값 전송
 			document.form_check.submit(); //유효성 검사의 포인트   
